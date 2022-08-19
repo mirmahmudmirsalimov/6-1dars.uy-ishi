@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    margin-top: 35px;
+}
+
+.wave {
+    z-index: 1000;
+}
+
+p {
+    color: rgba(4, 149, 6, 0.918);
+}
+.form__btn {
+    border: 2px solid rgba(4, 149, 6, 0.918);
+    background-color: #000;
+    color: rgba(4, 149, 6, 0.918);
+    border-radius: 6px;
+    padding: 10px 15px 10px;
+}
+.clear {
+    border: 2px solid rgba(4, 149, 6, 0.918);
+    background-color: #000;
+    color: rgba(4, 149, 6, 0.918);
+    border-radius: 6px;
+    padding: 10px 15px 10px;
+}
+#input {
+    border: 2px solid rgba(4, 149, 6, 0.918);
+    padding: 10px 15px 10px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 350px;
+    color: rgba(4, 149, 6, 0.918);
+    background-color: #000;
+    outline: rgba(4, 149, 6, 0.918);
+}
+
+i {
+    position: absolute;
+    height: 300px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 10px;
+    animation: animate 10s linear infinite;
+    border-bottom-left-radius: 10px;
+}
+i:nth-child(3n+1) {
+    background: linear-gradient(transparent, rgba(4, 149, 6, 0.918));
+}
+i:nth-child(3n+2) {
+    background: linear-gradient(transparent, rgb(11, 114, 52));
+}
+i:nth-child(3n+3) {
+    background: linear-gradient(transparent, rgba(0, 255, 30, 0.666));
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-15px);
+        z-index: -100;
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: translateY(calc(100vh + 1000px));
+    }
+}
